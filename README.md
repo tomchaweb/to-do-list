@@ -1,0 +1,1 @@
+To-do list web app created with html, css and javascript. Created for some quick Javascript practice. Used javascript to take user inputs of tasks and add them to an array. Also used javascript to dynamically change the titles to show current day and current number of tasks.
