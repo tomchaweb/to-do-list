@@ -142,3 +142,26 @@ ul{
         padding: 30px;
     }
 }
+
+@media (max-width: 500px){
+    #app-div {
+        width: 25rem;
+    }
+
+    .add-new {
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    #new-task-input {
+        font-size: 1.2rem;
+    }
+
+    .task-div {
+        width: 20rem;
+    }
+
+    .task-text {
+        font-size: 1.2rem;
+    }
+}

@@ -40,15 +40,17 @@ switch(day){
 function AddTask(){
     if (newTaskInput.value != ""){
         tasks.push(newTaskInput.value);
-        taskNumTitle.textContent = `You've got ${tasks.length} tasks for today`;
+        if (tasks.length === 1){
+            taskNumTitle.textContent = `You've got 1 task for today`;
+        }
+        else{
+            taskNumTitle.textContent = `You've got ${tasks.length} tasks for today`;
+        }
         let taskDivs = document.getElementsByClassName("task-div");
         let taskListItems = document.getElementsByClassName("task-text");
         for (let i=0; i<tasks.length; i++){
             taskDivs[i].classList.remove("hidden");
             taskListItems[i].textContent = tasks[i];
-
-            // let randomNum = Math.round(Math.random()*3)+1;
-            // taskDivs[i].classList.add(`colour-${randomNum}`);
         }
         newTaskInput.value = "";
     }else{
